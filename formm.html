@@ -1,0 +1,41 @@
+ <form action="/action_page.php">
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+  <label for="country">Country</label>
+  <select id="country" name="country">
+    <option value="australia">Australia</option>
+    <option value="canada">Canada</option>
+    <option value="usa">USA</option>
+  </select>
+
+  <input type="button" id="btnData" value="Submit" onClick="Information Saved"/>
+
+</form>
+<html>
+	<head>
+		<title>Add two integer numbers using JavaScript.</title>
+		<script type="text/javascript">
+			function addTwoNumbers(textBox1, textBox2){
+				var x=document.getElementById(textBox1).value;
+				var y=document.getElementById(textBox2).value;
+				var sum=0;
+				sum=Number(x)+Number(y);
+				alert("SUM is: " + sum);
+			}
+		</script>
+	</head>
+<body>
+	<p> <time datetime="2021-12-14">Tuesday</time>.</p>
+	<h1>Add two integer numbers using JavaScript.</h1>
+	<b>Enter first Number: </b><br>
+	<input type="text" id="textIn1"/><br>
+	<b>Enter second Number: </b><br>
+	<input type="text" id="textIn2"/><br><br>
+	<input type="button" id="btnSum" value="Calculate SUM" onClick="addTwoNumbers('textIn1','textIn2')"/>
+</body>
+
+</html>
